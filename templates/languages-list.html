@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Languages</title>
+</head>
+<body>
+
+<h2 style="color: #34495E;
+       font-size: 50px;
+     font-family: Arial">Языки</h2>
+
+<h3><a href="./"
+    style="color: #E59866;
+       font-size: 25px;
+     font-family: Arial">На главную страницу</a></h3>
+
+<ol>
+    {% for item in languages %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>
+
+{% comment %}
+<li style="color: #34495E;
+                 font-size: 30px;
+               font-family: Arial">{{ country.country }}</li>
+{% endcomment %}
