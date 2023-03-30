@@ -1,3 +1,5 @@
-.idea
-django_venv
+.idea/
+*venv/
+*.pyc
+db.*
 

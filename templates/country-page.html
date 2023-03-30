@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ item.country }}</title>
+    <title>{{ country.name }}</title>
 </head>
 <body>
 
 <h1 style="color: #34495E;
-       font-size: 75px">{{ item.country }}</h1>
+       font-size: 75px">{{ country.name }}</h1>
 
 <h2><a href="/countries-list"
        style="color: #E59866;
@@ -19,9 +19,9 @@
 
 <ol style="color: #34495E;
        font-size: 30px">
-    {% for lang in item.languages %}
+    {% comment %} {% for lang in country.languages %}
         <li>{{ lang }}</li>
-    {% endfor %}
+    {% endfor %} {% endcomment %}
 </ol>
 
 </body>

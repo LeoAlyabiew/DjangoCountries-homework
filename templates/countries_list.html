@@ -16,10 +16,11 @@
 
 <ol>
     {% for country in countries %}
-        <li style="font-size: 30px;"><a href="/country/{{ country.country }}"
+        <li style="font-size: 30px;"><a href="/country/{{ country.id }}"
                 style="color: #34495E;
                    font-size: 30px;
-                 font-family: Arial">{{ country.country }}</a></li>
+                 font-family: Arial;
+             text-decoration: none">{{ country.name }}</a></li>
     {% endfor %}
 </ol>
 </body>
