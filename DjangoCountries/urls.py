@@ -3,11 +3,8 @@ from django.urls import path
 from MainApp import views
 
 urlpatterns = [
-    path('', views.home),
-    path('countries-list', views._list),
-    path('languages-list', views.languages),
-    path('country/<int:id>', views.country_page),
-    path('converter1', views.convert_countries_to_db),
-    path('converter2', views.convert_lang_to_db),
-    path('converter3', views.add_lang_to_countries)
+    path('', views.home, name='main'),
+    path('countries-list/', views.countries_list, name='countries_list'),
+    path('languages/', views.languages_list, name='languages_list'),
+    path('country/<int:id>', views.country_page, name='country'),
 ]

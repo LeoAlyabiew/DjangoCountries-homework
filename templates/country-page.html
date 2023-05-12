@@ -19,9 +19,9 @@
 
 <ol style="color: #34495E;
        font-size: 30px">
-    {% comment %} {% for lang in country.languages %}
-        <li>{{ lang }}</li>
-    {% endfor %} {% endcomment %}
+    {% for lang in country.languages.all %}
+        <li>{{ lang.name }}</li>
+    {% endfor %}
 </ol>
 
 </body>

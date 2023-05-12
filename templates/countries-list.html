@@ -9,14 +9,14 @@
        font-size: 50px;
      font-family: Arial">Все страны</h2>
 
-<h3><a href="./"
+<h3><a href="{% url 'main' %}"
        style="color: #E59866;
           font-size: 25px;
         font-family: Arial">На главную страницу</a></h3>
 
 <ol>
     {% for country in countries %}
-        <li style="font-size: 30px;"><a href="/country/{{ country.id }}"
+        <li style="font-size: 30px;"><a href="{% url 'country' country.id %}"
                 style="color: #34495E;
                    font-size: 30px;
                  font-family: Arial;
